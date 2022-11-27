@@ -41,7 +41,7 @@ header{
     align-items: center;
     height: 30rem;     
     background-size: contain;
-    background-image: url(/img\background.png)
+    background-image: url(../img/background.png)
 }
 
 .banner{
