@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:opsz@9..144&family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospaces;
+}
+
+header{
+    box-shadow:  0.125rem 0.125rem 0.25rem #000000 ;
+    position: fixed;
+    width: 100%;
+}
+
+.bar-top{
+    display: flex;
+    background-color: #FFFAFA;
+    height: 5rem;
+    align-items: center;
+
+}
+
+.logo{
+    margin-left: 1rem;
+}
+
+.logo span{
+    color: #B64A1D;
+    font-family: 'Anton', sans-serif;
+    -webkit-text-stroke:  1px #000000 ;
+    text-shadow: 0.125rem 0.125rem 0.25rem #000000
+    ;
+    font-size: 3rem;
+;
+}
+
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    height: 30rem;     
+    background-size: contain;
+    background-image: url(/img/background.png);
+}
+
+.banner{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.time-game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+    height: 5rem;
+    border-radius: 3rem;
+    background-color: #115C93;
+    color: #FFFAFA;
+}
+
+
+.games{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.card-game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 70rem;
+    background-color: #115C93;
+    border-radius: 20rem;
+    margin-bottom: 5rem;
+}
+
+.card-game-txt{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    align-items: center;
+}
+
+.card-game-txt h2{
+    color: #FFFAFA;
+    font-weight: bold;
+    font-size:2rem;
+}
+
+.card-game-txt h3{
+    color: #999999 ;
+}
