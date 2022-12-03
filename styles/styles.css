@@ -9,7 +9,6 @@
 
 header{
     box-shadow:  0.125rem 0.125rem 0.25rem #000000 ;
-    position: fixed;
     width: 100%;
 }
 
@@ -35,32 +34,108 @@ header{
 ;
 }
 
-
-.banner-container{
-    display: flex;
-    align-items: center;
-    height: 30rem;     
-    background-size: contain;
-    background-image: url(../img/background.png)
+.slider{
+    margin: 5rem auto 0;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
 }
 
-.banner{
-    width: 100vw;
+.slides{
+    width: 400%;
+    height: 400px;
     display: flex;
-    align-items: center;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
     justify-content: center;
 }
 
+.manual-btn{
+    border: 2px solid #0c0b0b;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
 
-.time-game{
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.game{
     display: flex;
-    align-items: center;
+    width: 800px;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
     justify-content: center;
-    width: 18rem;
-    height: 5rem;
-    border-radius: 3rem;
-    background-color: #115C93;
-    color: #FFFAFA;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #000000;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #000000;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #000000;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #000000;
+}
+.text{
+    margin: 0 auto;
 }
 
 
@@ -77,7 +152,7 @@ header{
     justify-content: center;
     height: 20rem;
     width: 70rem;
-    background-color: #115C93;
+    background-color: rgba(132, 159, 178, 0.5);
     border-radius: 20rem;
     margin-bottom: 5rem;
 }
