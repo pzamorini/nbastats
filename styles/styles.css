@@ -14,7 +14,7 @@ header{
     position:sticky;
     position: -webkit-sticky; /* Necessário para funcionar no Safari */
     top: 0;
-    z-index: 2;
+    z-index: 2; /* para sempre a header ficar acima do conteudo */
 }
 
 .bar-top{
@@ -29,15 +29,16 @@ header{
     margin-left: 1rem;
 }
 
-.logo span{
+.logo a{
     color: #B64A1D;
     font-family: 'Anton', sans-serif;
     -webkit-text-stroke:  1px #000000 ;
     text-shadow: 0.125rem 0.125rem 0.25rem #000000
     ;
     font-size: 3rem;
-;
+    text-decoration: none;
 }
+
 main{
     background-color: #F6F7F9;
 }
@@ -185,4 +186,24 @@ main{
 
 .card-game-txt h3{
     color: #999999 ;
+}
+
+#button-home{
+    background-color: rgba(182, 75, 29, 0.832);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    transition: 1s;
+    box-shadow: 1px 0px 5px rgb(25, 25, 25);
+}
+
+#button-home:hover{
+    background: #20a6ff;
+}
+
+#button-home img{
+    height: 1rem;
+    width: 2rem;
 }
