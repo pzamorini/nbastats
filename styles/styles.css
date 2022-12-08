@@ -188,6 +188,33 @@ main{
     color: #999999 ;
 }
 
+#jogos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+    height: 200px;
+}
+
+#jogos div{
+    margin-bottom: 40px;
+}
+
+#jogos span:first-child{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#jogos span:last-child{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#jogos span:nth-child(n+2):nth-child(-n+3){ /* selecionei do segundo até o terceito elemento */
+    font-family: Helvetica, sans-serif;
+}
 #button-home{
     background-color: rgba(182, 75, 29, 0.832);
     padding: 1.5rem;
